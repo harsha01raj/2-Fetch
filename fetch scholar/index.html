@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <style>
+        *{
+            background-color: black;
+            color: grey;
+        }
+        #productList{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            color: grey;
+            background-color: black;
+        }
+        .user-card{
+            border:2px solid grey;
+            margin: 25px;
+            width:225px;
+            height:220px;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+           
+        }
+        img{
+            width:80px;
+            height:80px;
+            margin-bottom: 0px;
+        }
+        h6{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            
+        }
+        p{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 8px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Search products">
+    <select id="sortSelect">
+        <option value="price">Price</option>
+        <option value="title">Title</option>
+    </select>
+    <div id="productList"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
